@@ -5,7 +5,6 @@ import os
 import subprocess
 import requests
 
-# 하드코딩된 비밀번호 
 DB_PASSWORD = "super_secret_password"  # hardcoded password
 
 def bad_eval(user_input: str):
