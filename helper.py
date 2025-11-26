@@ -12,7 +12,7 @@ def bad_eval(user_input: str):
     return eval(user_input)  # semgrep: python.lang.security.audit.eval
 
 def bad_subprocess(cmd: str):
-    # shell=True 로 사용자 입력 실행 (command injection 위험)
+    # shell=True 로 사용자 입력 실행 (command injection 위험
     subprocess.run(cmd, shell=True)  # semgrep: subprocess shell=True
 
 def bad_requests():
