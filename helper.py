@@ -16,7 +16,7 @@ def bad_subprocess(cmd: str):
     subprocess.run(cmd, shell=True)  # semgrep: subprocess shell=True
 
 def bad_requests():
-    # SSL 검증 끄기 (MITM 공격 위험)
+    # SSL 검증 끄기 (MITM 공격 위험
     requests.get("https://example.com", verify=False)  # semgrep: requests.verify_false
 
 if __name__ == "__main__":
