@@ -42,7 +42,7 @@ def get_user(username: str):
     query = f"SELECT * FROM users WHERE username = '{username}'"  # ERROR
     return conn.execute(query)
 
-# ========== WARNING 레벨 ==========
+# ========== WARNING 레벨 =========
 
 # 1. eval() 사용
 def calculate(expression: str):
